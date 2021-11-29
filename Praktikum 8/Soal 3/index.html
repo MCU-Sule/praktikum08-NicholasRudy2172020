@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Soal 3</title>
+        <meta name =”author” content="Nicholas_Christopher_Rudy 2172020">
+    </head>
+    <style>
+        div{
+            display: inline-block;
+            color: rgb(rgb(255, 255, 255));
+            text-align: center;
+            height: 50px;
+        }
+    </style>
+    <body>
+        <script>
+            //let a = Math.floor(Math.random()*255)
+            //let b = Math.floor(Math.random()*255)
+            //let c = Math.floor(Math.random()*255)
+            let angka=parseInt(prompt("besar angka:"))
+            let row=angka-1
+            let s=100
+            for(i=1;i<=row;i++){
+                for(x=1;x<=i;x++){
+                    //document.write("<div style='width"+s/i+"%; background-color:rgb("+ a +","+ b +","+ c +");'>"+ x +"</div>")
+                    document.write("<div style='width:"+s/i+"%; background-color: rgb("+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255)+");'>"+ x +"</div>")
+                }
+            }
+        </script>
+    </body>
+</html>
